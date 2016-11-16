@@ -9,6 +9,8 @@ gem 'pg', '~> 0.18'
 gem 'puma', '~> 3.0'
 # Used bootstrap library for styles
 gem 'bootstrap-sass'
+
+gem 'font-awesome-sass'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
