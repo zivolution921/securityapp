@@ -1,0 +1,25 @@
+<div class="container">
+  <h2 class="text-center">List Of Properties</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <h2>Residential</h2>
+        <ol>
+          <li ng-repeat="property in residentialProperties">{{property.name}}</li>
+        </ol>
+      </div>
+      <div class="col-md-4">
+        <h2>Business</h2>
+        <ol>
+          <li ng-repeat="property in businessProperties">{{property.name}}</li>
+        </ol>
+      </div>
+      <div class="col-md-4">
+        <h2>Personal</h2>
+        <ol>
+          <li ng-repeat="property in personalProperties">{{property.name}}</li>
+        </ol>
+      </div>
+    </div>
+    
+    
+</div>

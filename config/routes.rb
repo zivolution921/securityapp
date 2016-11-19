@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
-  root 'pages#home'
-  get '/about' => 'pages#about'
+  resources :properties
+  root 'application#index'
+  get '*path' => 'application#index'
+
+  # get '/about' => 'pages#about'
+  # resources :categories do 
+  #   resources :subcategories
+  # end
 end

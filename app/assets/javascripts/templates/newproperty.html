@@ -1,0 +1,29 @@
+Create New Property
+<form name="form">
+    <div>
+      <select data-ng-model="property.category">
+        <option>Business</option>
+        <option>Personal</option>
+        <option>Residential</option>
+      </select>
+    </div>
+    <div>
+        <input type="text" data-ng-model="property.name" class="form-control" placeholder="Enter Your Name" required />
+    </div>
+    <div>
+        <input type="text" data-ng-model="property.location" class="form-control" placeholder="Enter Property Location" required />
+    </div>
+     <div>
+        <input type="email" data-ng-model="property.email" class="form-control" placeholder="Enter Email" required />
+    </div>
+     <div>
+        <input type="tel" data-ng-model="property.phone" class="form-control" placeholder="Enter phone e.g. 888-888-8888" />
+    </div>
+    <div>
+        <input type="text" data-ng-model="property.job_title" class="form-control" placeholder="Enter Property Title" required />
+    </div>
+    <div>
+        <input type="text" data-ng-model="property.job_description" class="form-control" placeholder="Enter Property Decription" required />
+    </div>
+    <button ng-click="submit()">Submit</button>
+</form>
