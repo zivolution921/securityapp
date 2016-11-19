@@ -1,4 +1,4 @@
 angular.module('myApp')
-       .controller('AboutController', function ($scope) {
+       .controller('AboutController', function () {
           console.log("welcome to about");  
 });
