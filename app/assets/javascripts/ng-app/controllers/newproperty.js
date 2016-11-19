@@ -1,5 +1,5 @@
 angular.module('myApp')
-    .controller('NewPropertyController', function ($scope, $http, $state) {
+    .controller('NewPropertyController', ['$scope', '$http', '$state', function ($scope, $http, $state) {
         $scope.property = {
           
         };
@@ -8,4 +8,4 @@ angular.module('myApp')
             $state.go('watchlist');
           })
         }
-    });
+    }]);

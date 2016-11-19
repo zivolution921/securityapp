@@ -1,5 +1,5 @@
 angular.module('myApp')
-    .controller('WatchListController', function ($scope, $http) {
+    .controller('WatchListController', ['$scope', '$http', function ($scope, $http) {
         $http.get('/properties').then(function(result) {
           $scope.residentialProperties = result.data.filter(function(item){
             return item.category == 'Residential';
@@ -13,4 +13,4 @@ angular.module('myApp')
             return item.category == 'Business';
           });
         });
-    });
+    }]);
