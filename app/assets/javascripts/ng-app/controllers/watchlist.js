@@ -18,5 +18,5 @@ angular.module('myApp')
             return item.category == 'Business';
           });
         });
-        //$http.get('/properties/' + $scopeid)
+        
     }]);
