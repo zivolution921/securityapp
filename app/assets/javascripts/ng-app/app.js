@@ -21,7 +21,7 @@ angular
           controller: 'AboutController'
         })
         .state('watchlist', {
-          url: '/watch-list',
+          url: '/watchlist',
           templateUrl: 'watchlist.html',
           controller: 'WatchListController'
         })
@@ -29,6 +29,11 @@ angular
           url: '/new-property',
           templateUrl: 'newproperty.html',
           controller: 'NewPropertyController'
+        })
+        .state('user-property', {
+          url: '/watchlist/:property_id', 
+          templateUrl: 'userproperty.html',
+          controller: 'UserPropertyController'
         })
         ;
 

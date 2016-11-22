@@ -1,23 +1,42 @@
+
 <div class="container">
+  
+  <button><a ui-sref="newproperty">New Watch</a></button>
   <h2 class="text-center">List Of Properties</h2>
     <div class="row">
-      <div class="col-md-4">
-        <h2>Residential</h2>
-        <ol>
-          <li ng-repeat="property in residentialProperties">{{property.name}}</li>
-        </ol>
+      <div class="col-sm-5 col-md-6">
+        <h2>Residential/Personal</h2>
+        <ul class="list-unstyled">
+          <li ng-repeat="property in personalProperties">
+            <div class="well row">
+              <div class="col-sm-4">
+                <p>User name: <a ui-sref="user-property({property_id: property.id})">
+                  {{property.name | uppercase}}
+                </a></p>
+                <p class="text-center">Job title: {{property.job_title}}</p>
+                <p>Job description: {{property.job_description}}</p>
+                <p>Property location: {{property.location}}</p>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
-      <div class="col-md-4">
-        <h2>Business</h2>
-        <ol>
-          <li ng-repeat="property in businessProperties">{{property.name}}</li>
-        </ol>
-      </div>
-      <div class="col-md-4">
-        <h2>Personal</h2>
-        <ol>
-          <li ng-repeat="property in personalProperties">{{property.name}}</li>
-        </ol>
+      <div class="col-sm-5 col-sm-offset-2 col-md-6 col-md-offset-0">
+        <h2>Business/Commercial</h2>
+        <ul class="list-unstyled">
+          <li ng-repeat="property in businessProperties">
+            <div class="well row">
+              <div class="col-sm-4">
+                <p>User name: <a ui-sref="user-property({property_id: property.id})">
+                  {{property.name | uppercase}}
+                </a></p>
+                <p class="text-center">Job title: {{property.job_title}}</p>
+                <p>Job description: {{property.job_description}}</p>
+                <p>Property location: {{property.location}}</p>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
     
