@@ -20,3 +20,4 @@
 //= require_tree .
 //= require_tree ./templates
 //= require_tree ./ng-app
+

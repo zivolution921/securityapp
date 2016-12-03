@@ -1,0 +1,23 @@
+/* ...
+*= require_self
+*= require_tree .
+*/
+
+
+
+body#angularBody {
+ 
+ 
+  background: -moz-linear-gradient(to left, #004FF9 , #FFF94C) !important;
+  background: linear-gradient(to left, #004FF9 , #FFF94C) !important;
+  background: -o-linear-gradient(to left, #004FF9 , #FFF94C) !important;
+  background: -ms-linear-gradient(to left, #004FF9 , #FFF94C) !important; 
+  /* Chrome 10-25, Safari 5.1-6 */
+ 
+}
+
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
