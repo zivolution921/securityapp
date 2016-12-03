@@ -35,6 +35,11 @@ angular
           templateUrl: 'userproperty.html',
           controller: 'UserPropertyController'
         })
+        .state('installation', {
+          url: '/installation', 
+          templateUrl: 'installation.html',
+          controller: 'InstallationController'
+        })
         ;
 
     // default fall back route
