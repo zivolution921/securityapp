@@ -8,6 +8,6 @@ class SiteMailer < ApplicationMailer
   def contact(contact)
     @contact = contact
 
-    mail to: "zvi728@gmail.com"
+    mail to: "ziv921@gmail.com"
   end
 end
