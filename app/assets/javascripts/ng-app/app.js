@@ -20,6 +20,11 @@ angular
           templateUrl: 'about.html',
           controller: 'AboutController'
         })
+        .state('contact', {
+          url: '/contact',
+          templateUrl: 'contact.html',
+          controller: 'ContactController'
+        })
         .state('watchlist', {
           url: '/watchlist',
           templateUrl: 'watchlist.html',
