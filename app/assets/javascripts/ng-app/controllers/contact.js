@@ -1,5 +1,5 @@
 angular.module('myApp')
-.controller('ContactController', function ($scope, $http) {
+.controller('ContactController', ['$scope', '$http', function ($scope, $http) {
          
   $scope.contact = {};
 
@@ -11,4 +11,4 @@ angular.module('myApp')
     });
   };
 
-});
+}]);
